@@ -1,0 +1,66 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0
+}
+
+main.pricing-table-container {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    align-items: center;
+}
+
+main article.pricing-table {
+    height: 35vh;
+    width: 350px;
+    margin: 20px 10px;
+    border: 2px solid black;
+    display: flex;
+    flex-direction: column;
+}
+
+article div.header {
+    font-size: 36px;
+    font-weight: 800;
+    padding: 10px 0;
+    background-color: blue;
+    color: white;
+    width: 100%;
+    text-align: center;
+    text-transform: capitalize;
+    letter-spacing: 1px;
+}
+
+article ul.items {
+    padding: 20px 40px;
+    height: 50%;
+}
+
+ul li.item {
+    text-transform: capitalize;
+    font-size: large;
+}
+
+article div.pricing {
+    display: flex;
+    justify-content: start;
+}
+
+div a.plan-button {
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: 400;
+    margin: 20px;
+    padding: 1px 5px;
+    background-color: #9cc23c;
+    border: 2px solid #aecc62;
+    color: white
+}
+
+div div.price {
+    margin: 20px 0;
+    font-size: 26px;
+    font-weight: 600;
+}
