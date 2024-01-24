@@ -1,14 +1,15 @@
 * {
     box-sizing: border-box;
     margin: 0;
-    padding: 0
+    padding: 0;
+    font-family: Helvetica;
 }
 
 main.pricing-table-container {
     height: 100vh;
     display: flex;
     justify-content: center;
-    width: 100%;
+    flex-wrap: wrap;
     align-items: center;
 }
 
@@ -16,7 +17,8 @@ main article.pricing-table {
     height: 35vh;
     width: 350px;
     margin: 20px 10px;
-    border: 2px solid black;
+    border: 3px solid #a6a6a6;
+    flex-grow: 1;
     display: flex;
     flex-direction: column;
 }
@@ -25,7 +27,7 @@ article div.header {
     font-size: 36px;
     font-weight: 800;
     padding: 10px 0;
-    background-color: blue;
+    background-color: black;
     color: white;
     width: 100%;
     text-align: center;
@@ -34,8 +36,9 @@ article div.header {
 }
 
 article ul.items {
-    padding: 20px 40px;
-    height: 50%;
+    padding: 10px 0 0 40px;
+    box-sizing: border-box;
+    height: 150px;
 }
 
 ul li.item {
@@ -50,17 +53,27 @@ article div.pricing {
 
 div a.plan-button {
     text-decoration: none;
-    font-size: 18px;
+    font-size: 16px;
     font-weight: 400;
     margin: 20px;
-    padding: 1px 5px;
     background-color: #9cc23c;
     border: 2px solid #aecc62;
-    color: white
+    color: white;
+    display: flex;
+    align-items: center;
+    padding: 2px;
 }
 
 div div.price {
     margin: 20px 0;
     font-size: 26px;
     font-weight: 600;
+}
+
+article:nth-last-of-type(2) div.header {
+    background-color: #0476bd;
+}
+
+main article:nth-last-of-type(2).pricing-table {
+    border: 3px solid #9dc7e3;
 }
